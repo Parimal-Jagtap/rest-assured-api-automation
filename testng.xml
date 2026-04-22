@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="API Automation Suite" parallel="classes" thread-count="3" verbose="1">
+
+    <test name="Auth API Tests">
+        <groups>
+            <run>
+                <include name="smoke"/>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="tests.AuthAPITest"/>
+        </classes>
+    </test>
+
+    <test name="Product API Tests">
+        <classes>
+            <class name="tests.ProductAPITest"/>
+        </classes>
+    </test>
+
+    <test name="Order API Tests">
+        <classes>
+            <class name="tests.OrderAPITest"/>
+        </classes>
+    </test>
+
+</suite>
