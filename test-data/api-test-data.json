@@ -1,0 +1,31 @@
+{
+  "auth": {
+    "validUser": {
+      "username": "testuser@api.com",
+      "password": "TestPass@123"
+    },
+    "invalidUser": {
+      "username": "invalid@api.com",
+      "password": "WrongPass"
+    }
+  },
+  "product": {
+    "create": {
+      "name": "Test Product API",
+      "price": "999",
+      "category": "Electronics"
+    },
+    "update": {
+      "name": "Updated Product Name",
+      "price": "1299"
+    },
+    "validCategory": "Electronics"
+  },
+  "order": {
+    "create": {
+      "quantity": 2,
+      "shippingAddress": "123 Test Street, Pune, 411001"
+    },
+    "statusUpdate": "confirmed"
+  }
+}
